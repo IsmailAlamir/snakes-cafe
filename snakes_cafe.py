@@ -36,23 +36,23 @@ Unicorn Tears
 '''
 
 list_menu=[
-    "Wings",
-    "Cookies",
-    "Spring Rolls", 
-    "Salmon",
-    "Steak",
-    "Meat Tornado",
-    "A Literal Garden",
-    "Ice Cream",
-    "Cake",
-    "Pie",
-    "Coffee",
-    "Tea",
-    "Unicorn Tears"
+    "wings",
+    "cookies",
+    "spring rolls", 
+    "salmon",
+    "steak",
+    "meat tornado",
+    "a literal garden",
+    "ice cream",
+    "cake",
+    "pie",
+    "coffee",
+    "tea",
+    "unicorn tears"
 ]
 
 print(menu)
-order=input(">")
+order=input(">").lower()
 ss=[]
 
 while order !="quit":
@@ -60,11 +60,11 @@ while order !="quit":
         ss.append(order)
         count = ss.count(order)
         print(f"** {count} order of {order} have been added to your meal **")
-        order=input(">")
+        order=input(">").lower()
 
     else :
         print("please select from the menu")
-        order=input(">")
+        order=input(">").lower()
 if ss==[]:
     print ("** You didn't order anything **")
 else: 
